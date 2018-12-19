@@ -46,6 +46,7 @@
     "test": "npm run lint && npm run build && jest --coverage"
   },
   "jest": {
+    "clearMocks": true,
     "collectCoverageFrom": [
       "<rootDir>/source/**/*.js"
     ],
