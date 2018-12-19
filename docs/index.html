@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>react-with-forwarded-ref example</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      html {
+        box-sizing: border-box;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      html,
+      body {
+        min-height: 100%;
+        font-size: 16px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.7;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .container {
+        max-width: 45em;
+        margin: 5em auto;
+      }
+      .btn--words {
+        display: inline-block;
+        padding: 0.5em 1em;
+        background-color: #0099ff;
+        color: #fff;
+        cursor: default;
+        border-radius: 3px;
+      }
+      .btn--words:focus {
+        outline: 1px dotted #000;
+      }
+      .btn--noWords {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #0099ff;
+        cursor: default;
+        border-radius: 3px;
+      }
+      .btn--noWords:focus {
+        outline: 1px dotted #000;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>react-with-forwarded-ref example</h1>
+      <div data-app></div>
+    </main>
+    <script src="app.js" async></script>
+  </body>
+</html>
