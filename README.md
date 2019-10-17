@@ -1,5 +1,5 @@
 # react-with-forwarded-ref
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 [![npm version](https://img.shields.io/npm/v/react-with-forwarded-ref.svg)](https://www.npmjs.com/package/react-with-forwarded-ref) [![npm downloads](https://img.shields.io/npm/dm/react-with-forwarded-ref.svg)](https://www.npmjs.com/package/react-with-forwarded-ref) [![Build Status](https://travis-ci.org/rpearce/react-with-forwarded-ref.svg?branch=master)](https://travis-ci.org/rpearce/react-with-forwarded-ref) [![Coverage Status](https://coveralls.io/repos/github/rpearce/react-with-forwarded-ref/badge.svg?branch=master)](https://coveralls.io/github/rpearce/react-with-forwarded-ref?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/61ace8daca24175f9d16/maintainability)](https://codeclimate.com/github/rpearce/react-with-forwarded-ref/maintainability)
 
@@ -24,9 +24,17 @@ Please see the [`API Documentation`](./API.md) for usage.
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-| [<img src="https://avatars2.githubusercontent.com/u/592876?v=4" width="100px;"/><br /><sub><b>Robert Pearce</b></sub>](https://robertwpearce.com)<br />[💻](https://github.com/rpearce/react-with-forwarded-ref/commits?author=rpearce "Code") [📖](https://github.com/rpearce/react-with-forwarded-ref/commits?author=rpearce "Documentation") [💡](#example-rpearce "Examples") [🤔](#ideas-rpearce "Ideas, Planning, & Feedback") [⚠️](https://github.com/rpearce/react-with-forwarded-ref/commits?author=rpearce "Tests") |
-| :---: |
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://robertwpearce.com"><img src="https://avatars2.githubusercontent.com/u/592876?v=4" width="100px;" alt="Robert Pearce"/><br /><sub><b>Robert Pearce</b></sub></a><br /><a href="https://github.com/rpearce/react-with-forwarded-ref/commits?author=rpearce" title="Code">💻</a> <a href="https://github.com/rpearce/react-with-forwarded-ref/commits?author=rpearce" title="Documentation">📖</a> <a href="#example-rpearce" title="Examples">💡</a> <a href="#ideas-rpearce" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/rpearce/react-with-forwarded-ref/commits?author=rpearce" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://zuffik.eu"><img src="https://avatars1.githubusercontent.com/u/7671752?v=4" width="100px;" alt="Kristián Žuffa"/><br /><sub><b>Kristián Žuffa</b></sub></a><br /><a href="https://github.com/rpearce/react-with-forwarded-ref/commits?author=zuffik" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
