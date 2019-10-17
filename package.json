@@ -32,6 +32,8 @@
     "AUTHORS",
     "LICENSE",
     "README.md",
+    "index.d.js",
+    "index.js",
     "src/"
   ],
   "scripts": {
