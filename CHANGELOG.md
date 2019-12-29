@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2019-12-29
+
+### Added
+* `browser` umd field
+* `sideEffects: false` to `package.json`
+
+### Changed
+* now using `rollup` for builds
+* updated `main` and `module` fields (not using `index.js` in root folder any
+  more)
+* updated heaps of dependencies
+* moved API docs back to README
+* updated license from ISC to BSD-3
+
 ## [0.2.0] - 2019-10-17
 
 ### Added

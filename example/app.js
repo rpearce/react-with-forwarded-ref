@@ -1,7 +1,9 @@
+/* eslint react/prop-types: 0 */
+
 import React, { Component, createRef } from 'react'
 import ReactDOM from 'react-dom'
 
-import withForwardedRef from '../src'
+import withForwardedRef from '../dist/esm'
 
 // example component
 const Comp = ({ children, className, forwardedRef }) => (
@@ -21,7 +23,7 @@ class App extends Component {
 
   render() {
     return (
-      <WrappedComp className="foo" ref={this.ref} >
+      <WrappedComp className="foo" ref={this.ref}>
         Testing 123
       </WrappedComp>
     )
