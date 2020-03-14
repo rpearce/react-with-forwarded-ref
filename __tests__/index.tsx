@@ -1,32 +1,33 @@
-/* eslint react/prop-types: 0 */
-
-import React, { createRef } from 'react'
-import { renderIntoDocument } from 'react-dom/test-utils'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
-
+import React, { FC, ReactNode, RefObject, createRef } from 'react'
+import { render } from '@testing-library/react'
 import withForwardedRef from '../source'
+
+interface Props<A = any> {
+  children: ReactNode
+  className: string
+  forwardedRef?: RefObject<A>
+}
 
 describe('withForwardedRef', () => {
   it('renders', () => {
-    const Comp = ({ children, className, forwardedRef }) => (
+    const Comp: FC<Props> = ({ children, className, forwardedRef }) => (
       <div className={className} ref={forwardedRef}>
         {children}
       </div>
     )
     const WrappedComp = withForwardedRef(Comp)
     const ref = createRef()
-    const wrapper = shallow(
+    const { asFragment } = render(
       <WrappedComp className="foo" ref={ref}>
         Testing 123
       </WrappedComp>
     )
-    const tree = toJson(wrapper)
-    expect(tree).toMatchSnapshot()
+
+    expect(asFragment()).toMatchSnapshot()
   })
 
   it('renders, custom displayName', () => {
-    const Comp = ({ children, className, forwardedRef }) => (
+    const Comp: FC<Props> = ({ children, className, forwardedRef }) => (
       <div className={className} ref={forwardedRef}>
         {children}
       </div>
@@ -34,28 +35,30 @@ describe('withForwardedRef', () => {
     Comp.displayName = 'FooBar'
     const WrappedComp = withForwardedRef(Comp)
     const ref = createRef()
-    const wrapper = shallow(
+    const { asFragment } = render(
       <WrappedComp className="foo" ref={ref}>
         Testing 123
       </WrappedComp>
     )
-    const tree = toJson(wrapper)
-    expect(tree).toMatchSnapshot()
+
+    expect(asFragment()).toMatchSnapshot()
   })
 
   it('ref points to HTMLDivElement', () => {
-    const Comp = ({ children, className, forwardedRef }) => (
+    const Comp: FC<Props> = ({ children, className, forwardedRef }) => (
       <div className={className} ref={forwardedRef}>
         {children}
       </div>
     )
     const WrappedComp = withForwardedRef(Comp)
     const ref = createRef()
-    renderIntoDocument(
+
+    render(
       <WrappedComp className="foo" ref={ref}>
         Testing 123
       </WrappedComp>
     )
+
     expect(ref.current).toBeInstanceOf(HTMLDivElement)
   })
 })

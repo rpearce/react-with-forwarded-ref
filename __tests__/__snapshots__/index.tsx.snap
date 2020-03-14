@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withForwardedRef renders 1`] = `
+<DocumentFragment>
+  <div
+    class="foo"
+  >
+    Testing 123
+  </div>
+</DocumentFragment>
+`;
+
+exports[`withForwardedRef renders, custom displayName 1`] = `
+<DocumentFragment>
+  <div
+    class="foo"
+  >
+    Testing 123
+  </div>
+</DocumentFragment>
+`;

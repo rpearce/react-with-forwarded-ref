@@ -1,9 +1,10 @@
 module.exports = {
   clearMocks: true,
-  collectCoverageFrom: ['<rootDir>/source/**/*.js'],
-  moduleNameMapper: {
-    '\\.css$': 'identity-obj-proxy'
-  },
-  setupFilesAfterEnv: ['<rootDir>/test/setup.js'],
-  snapshotSerializers: ['enzyme-to-json/serializer']
+  collectCoverage: true,
+  collectCoverageFrom: ['<rootDir>/source/**/*.{ts,tsx}'],
+  coveragePathIgnorePatterns: ['/node_modules/'],
+  moduleNameMapper: {},
+  preset: 'ts-jest',
+  setupFilesAfterEnv: [],
+  verbose: true
 }
