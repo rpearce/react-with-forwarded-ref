@@ -19,6 +19,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['jsx-a11y', 'react', 'react-hooks', '@typescript-eslint'],
   rules: {
+    '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-explicit-any': 0, // because library is generic
     'jsx-quotes': ['error', 'prefer-double'],
     'jsx-a11y/no-onchange': 0,
