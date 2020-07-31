@@ -2,6 +2,7 @@ import React, { FC, ReactNode, RefObject, createRef } from 'react'
 import { render } from '@testing-library/react'
 import withForwardedRef from '../source'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface Props<A = any> {
   children: ReactNode
   className: string
