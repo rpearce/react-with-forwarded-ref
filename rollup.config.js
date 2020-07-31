@@ -100,7 +100,7 @@ const umd = [
       file: './dist/umd/react-with-forwarded-ref.min.js',
       exports: 'named',
       format: 'umd',
-      globals: { react: 'react', 'react-dom': 'reactdom' },
+      globals: { react: 'React', 'react-dom': 'ReactDom' },
       name: 'rwfr-umd',
       sourcemap: false
     },

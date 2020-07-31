@@ -8,11 +8,14 @@ import React, {
   forwardRef
 } from 'react'
 
-interface WithForwardedRef<A = any> {
+interface WithForwardedRef<A = unknown> {
   ref?: RefObject<A>
 }
 
-export default function withForwardedRef<A = any, B = {}>(
+export default function withForwardedRef<
+  A = unknown,
+  B = Record<string, unknown>
+>(
   Comp: ComponentType<B>
 ): ForwardRefExoticComponent<PropsWithoutRef<B> & RefAttributes<A>> {
   const WrappedComp: ForwardRefRenderFunction<A, B> = (props, ref) => (
