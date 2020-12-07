@@ -4,13 +4,8 @@ import React, {
   ForwardRefRenderFunction,
   PropsWithoutRef,
   RefAttributes,
-  RefObject,
   forwardRef
 } from 'react'
-
-interface WithForwardedRef<A = unknown> {
-  ref?: RefObject<A>
-}
 
 export default function withForwardedRef<
   A = unknown,
