@@ -4,7 +4,7 @@ import React, {
   ForwardRefRenderFunction,
   PropsWithoutRef,
   RefAttributes,
-  forwardRef
+  forwardRef,
 } from 'react'
 
 export default function withForwardedRef<
