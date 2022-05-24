@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/source/**/*.{ts,tsx}'],
@@ -7,5 +7,5 @@ module.exports = {
   preset: 'ts-jest',
   setupFilesAfterEnv: [],
   testEnvironment: 'jsdom',
-  verbose: true
+  verbose: true,
 }
