@@ -6,6 +6,7 @@
   "exports": {
     ".": "./dist/index.js"
   },
+  "types": "./dist/index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "contributors": [
     "Robert Pearce <me@robertwpearce.com> (https://robertwpearce.com)"
   ],
-  "license": "BSD-3",
+  "license": "Unlicense",
   "keywords": [
     "forwardRef",
     "react",
@@ -77,8 +78,5 @@
   },
   "peerDependencies": {
     "react": "^16.3.0 || ^17.0.0 || ^18.0.0"
-  },
-  "dependencies": {
-    "tslib": "^2.4.0"
   }
 }
