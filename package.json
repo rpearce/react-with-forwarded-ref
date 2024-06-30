@@ -17,7 +17,7 @@
   "contributors": [
     "Robert Pearce <me@robertwpearce.com> (https://robertwpearce.com)"
   ],
-  "license": "BSD-3",
+  "license": "Unlicense",
   "keywords": [
     "forwardRef",
     "react",
