@@ -1,6 +1,6 @@
 {
   "name": "react-with-forwarded-ref",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React higher-order component (HOC) for ref forwarding",
   "main": "dist/index.js",
   "exports": {

@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2024-06-30
+
+### Changed
+
+* Switched to public domain "Unlicense" license
+* Removed superfluous `tslib` dependency (now has 0 deps)
+* Adds `types` field to `package.json` to help with finding types
+
 ## [1.0.0] - 2022-05-23
 
 ### Changed
