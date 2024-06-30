@@ -1,7 +1,7 @@
 /* eslint react/prop-types: 0 */
 
 import React, { Component, createRef } from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
 import withForwardedRef from '../dist/esm'
 
@@ -31,4 +31,5 @@ class App extends Component {
 }
 
 const container = document.querySelector('[data-app]')
-ReactDOM.render(<App />, container)
+const root = createRoot(container)
+root.render(<App />)
